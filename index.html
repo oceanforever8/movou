@@ -259,8 +259,14 @@
         <a href="#" target="_blank">
           <span class="icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <rect width="24" height="24" rx="5" fill="#1BAEEA"/>
-              <path d="M15.5 6h-7A1.5 1.5 0 007 7.5v9A1.5 1.5 0 008.5 18h7a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0015.5 6zm-3.5 9a2 2 0 110-4 2 2 0 010 4zm2.5-6h-5v-1h5v1z" fill="#fff"/>
+              <defs>
+                <linearGradient id="itunes" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#e06bf2"/>
+                  <stop offset="100%" stop-color="#2ba8e0"/>
+                </linearGradient>
+              </defs>
+              <rect width="24" height="24" rx="5" fill="url(#itunes)"/>
+              <path d="M16 7v6.5a2.5 2.5 0 11-1.5-2.3V8.8L9 9.9V15a2.5 2.5 0 11-1.5-2.3V8l8.5-1z" fill="#fff"/>
             </svg>
           </span>
           <span class="label">iTunes</span>
