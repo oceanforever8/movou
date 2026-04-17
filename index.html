@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOVOU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #080808;
+      color: #ede9e0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 100%;
+      max-width: 480px;
+      padding: 0 1.5rem;
+      flex: 1;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 4rem 0 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    .avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 0.5px solid rgba(255,255,255,0.13);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .avatar svg {
+      opacity: 0.25;
+    }
+
+    .location {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6b6660;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .location svg {
+      opacity: 0.5;
+    }
+
+    .hero-name {
+      font-size: 2.25rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ede9e0;
+      margin-bottom: 0.4rem;
+      line-height: 1;
+    }
+
+    .hero-genre {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #d4a96a;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .hero-bio {
+      font-size: 14px;
+      font-weight: 300;
+      color: #ede9e0;
+      opacity: 0.55;
+      line-height: 1.65;
+      max-width: 340px;
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6b6660;
+      margin-bottom: 0.75rem;
+      font-weight: 400;
+    }
+
+    /* ── LISTEN ── */
+    .listen {
+      padding: 2.5rem 0;
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      list-style: none;
+    }
+
+    .link-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.875rem 1rem;
+      background: #111;
+      border: 0.5px solid rgba(255,255,255,0.13);
+      border-radius: 10px;
+      text-decoration: none;
+      color: #ede9e0;
+      font-size: 14px;
+      font-weight: 400;
+      transition: background 0.18s, border-color 0.18s;
+    }
+
+    .link-list a:hover {
+      background: #1a1a1a;
+      border-color: rgba(255,255,255,0.28);
+    }
+
+    .link-list a .icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-list a .label {
+      flex: 1;
+    }
+
+    .link-list a .arrow {
+      opacity: 0.25;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      width: 100%;
+      max-width: 480px;
+      padding: 2rem 1.5rem 2.5rem;
+      text-align: center;
+      font-size: 11px;
+      color: #6b6660;
+      letter-spacing: 0.08em;
+      border-top: 0.5px solid rgba(255,255,255,0.07);
+    }
+  </style>
+</head>
+<body>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="avatar">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="8" r="4" fill="#ede9e0"/>
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" fill="#ede9e0"/>
+      </svg>
+    </div>
+
+    <div class="location">
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#6b6660"/>
+        <circle cx="12" cy="9" r="2.5" fill="#080808"/>
+      </svg>
+      Dubai
+    </div>
+
+    <h1 class="hero-name">MOVOU</h1>
+    <p class="hero-genre">Melodic Techno · Melodic House</p>
+    <p class="hero-bio">Dark soundscapes and hypnotic rhythms from the heart of Dubai. Building emotional tension through minimalist layers and precise sound design.</p>
+  </section>
+
+  <!-- LISTEN -->
+  <section class="listen">
+    <p class="section-label">Listen</p>
+    <ul class="link-list">
+
+      <!-- Spotify -->
+      <li>
+        <a href="#" target="_blank">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" fill="#1DB954"/>
+              <path d="M7.5 15.5c2.5-1.5 5.5-1.5 8 0" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6.5 12.5c3-1.8 6.5-1.8 9.5 0" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M5.5 9.5c3.5-2.1 8-2.1 11.5 0" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="label">Spotify</span>
+          <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="#ede9e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- SoundCloud -->
+      <li>
+        <a href="#" target="_blank">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect width="24" height="24" rx="5" fill="#FF5500"/>
+              <path d="M4 14.5c0 1.1.9 2 2 2h10.5a2.5 2.5 0 000-5c0-.2 0-.3-.02-.5A4 4 0 009 12a3 3 0 00-5 2.5z" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="label">SoundCloud</span>
+          <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="#ede9e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- Apple Music -->
+      <li>
+        <a href="#" target="_blank">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect width="24" height="24" rx="5" fill="#FC3C44"/>
+              <path d="M16 7.5v6a2 2 0 11-1.5-1.94V9.3L10 10.2v5.3a2 2 0 11-1.5-1.94V8.5l7.5-1z" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="label">Apple Music</span>
+          <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="#ede9e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- iTunes -->
+      <li>
+        <a href="#" target="_blank">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect width="24" height="24" rx="5" fill="#1BAEEA"/>
+              <path d="M15.5 6h-7A1.5 1.5 0 007 7.5v9A1.5 1.5 0 008.5 18h7a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0015.5 6zm-3.5 9a2 2 0 110-4 2 2 0 010 4zm2.5-6h-5v-1h5v1z" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="label">iTunes</span>
+          <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="#ede9e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- YouTube -->
+      <li>
+        <a href="#" target="_blank">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect width="24" height="24" rx="5" fill="#FF0000"/>
+              <path d="M19.6 8.2a2 2 0 00-1.4-1.4C16.8 6.5 12 6.5 12 6.5s-4.8 0-6.2.3a2 2 0 00-1.4 1.4C4.1 9.6 4.1 12 4.1 12s0 2.4.3 3.8a2 2 0 001.4 1.4c1.4.3 6.2.3 6.2.3s4.8 0 6.2-.3a2 2 0 001.4-1.4c.3-1.4.3-3.8.3-3.8s0-2.4-.3-3.8z" fill="#FF0000"/>
+              <path d="M10.2 14.7V9.3l4.8 2.7-4.8 2.7z" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="label">YouTube</span>
+          <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="#ede9e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- Beatport -->
+      <li>
+        <a href="#" target="_blank">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect width="24" height="24" rx="5" fill="#02FF7D"/>
+              <path d="M7 7h4a3 3 0 010 6H7V7zm0 6h4.5a3.5 3.5 0 010 7H7v-7z" fill="#000"/>
+            </svg>
+          </span>
+          <span class="label">Beatport</span>
+          <span class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18l6-6-6-6" stroke="#ede9e0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>© 2026 MOVOU · Dubai</footer>
+
+</body>
+</html>
