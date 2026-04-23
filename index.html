@@ -32,7 +32,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #080808;
+      background: #080808 url('https://i.imgur.com/iE9Fydo.jpg') center center / cover fixed;
       color: #ede9e0;
       font-family: 'Inter', sans-serif;
       font-weight: 300;
@@ -42,6 +42,17 @@
       align-items: center;
       -webkit-font-smoothing: antialiased;
     }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(8,8,8,0.72);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    main, footer { position: relative; z-index: 1; }
 
     main {
       width: 100%;
